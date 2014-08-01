@@ -1,5 +1,6 @@
-package com.sinius15.cardsim;
+package com.sinius15.cardsim.secondary;
 
+import com.sinius15.cardsim.Vars;
 import com.sinius15.cardsim.primary.Getal;
 import com.sinius15.cardsim.primary.Kaart;
 import com.sinius15.cardsim.primary.Kleur;

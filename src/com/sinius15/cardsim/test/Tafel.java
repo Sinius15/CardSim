@@ -1,7 +1,7 @@
 package com.sinius15.cardsim.test;
 
-import com.sinius15.cardsim.Hand;
-import com.sinius15.cardsim.Set;
+import com.sinius15.cardsim.secondary.Hand;
+import com.sinius15.cardsim.secondary.Set;
 
 public class Tafel implements Runnable{
 	
@@ -22,7 +22,7 @@ public class Tafel implements Runnable{
 		
 		for(int i = 0; i <aantalSpelletjes; i++){
 			kaartSet.schud();
-			spelers = kaartSet.deel(7);
+			spelers = kaartSet.deel(7, "sinius");
 			
 			int klachten = 0;
 			for(Hand speler : spelers){
