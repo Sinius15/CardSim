@@ -24,6 +24,7 @@ public class Set {
 		List<Kaart> lijst = Arrays.asList(kaarten);
 		Collections.shuffle(lijst);
 		this.kaarten = lijst.toArray(new Kaart[SET_GROTE]);
+		aantalGedeeld = 0;
 	}
 
 	private int aantalGedeeld = 0;
