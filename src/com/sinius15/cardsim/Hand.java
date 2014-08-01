@@ -1,5 +1,9 @@
 package com.sinius15.cardsim;
 
+import com.sinius15.cardsim.primary.Getal;
+import com.sinius15.cardsim.primary.Kaart;
+import com.sinius15.cardsim.primary.Kleur;
+
 public class Hand {
 	
 	public Kaart[] kaarten;

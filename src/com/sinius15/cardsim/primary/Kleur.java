@@ -1,4 +1,4 @@
-package com.sinius15.cardsim;
+package com.sinius15.cardsim.primary;
 
 public enum Kleur {
 	

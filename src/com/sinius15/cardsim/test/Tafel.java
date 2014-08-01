@@ -22,9 +22,7 @@ public class Tafel implements Runnable{
 		
 		for(int i = 0; i <aantalSpelletjes; i++){
 			kaartSet.schud();
-			for(int j = 0; j < spelers.length; j++){
-				spelers[j] = kaartSet.deelVolgende();
-			}
+			spelers = kaartSet.deel(7);
 			
 			int klachten = 0;
 			for(Hand speler : spelers){

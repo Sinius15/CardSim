@@ -1,5 +1,8 @@
 package com.sinius15.cardsim;
 
+import com.sinius15.cardsim.primary.Getal;
+import com.sinius15.cardsim.primary.Kleur;
+
 public class Vars {
 	
 	//aantal tests per tafel
@@ -13,5 +16,8 @@ public class Vars {
 	
 	//maximale hoeveelheid dat van één getal aanwezig mag zijn in een hand.
 	public static final int MAX_GETAL_AANTAL = 2;  
+	
+	//aantal kaarten in één set
+	public static final int SET_GROTE = Kleur.values().length * Getal.values().length;
 	
 }
