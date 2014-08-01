@@ -2,31 +2,24 @@ package com.sinius15.cardsim;
 
 public class CardSimulator {
 	
+	public static int beindigdeSpellen = 0;
+	
 	public static void main(String[] args) {
-		Set kaartSet = new Set();
+
+		int spelHoeveelheid = 100;
 		
-		int slechtGeschud = 0, goedGeschud = 0;
-		
-		Hand[] spelers = new Hand[4];
-		for(int i = 0; i <1000; i++){
-			kaartSet.schud();
-			for(int j = 0; j < spelers.length; j++){
-				spelers[j] = kaartSet.deelVolgende();
-			}
-			
-			int klachten = 0;
-			for(Hand speler : spelers){
-				if(!speler.isGoedGeschud())
-					klachten++;
-			}
-			if(klachten > spelers.length/2)
-				slechtGeschud++;
-			else 
-				goedGeschud++;
+		for(int i = 0; i < spelHoeveelheid; i++){
+			new Thread(new KaartSpel(), "spel"+i).start();
 		}
 		
-		System.out.println("slecht Geschud: " + slechtGeschud);
-		System.out.println("goed Geschud: " + goedGeschud);
+		while(beindigdeSpellen != spelHoeveelheid){
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		
 		
 	}
 	
