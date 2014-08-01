@@ -15,6 +15,7 @@ public class Set {
 		for(Kleur kleur : Kleur.values()){
 			for(Getal getal : Getal.values()){
 				kaarten[i] = new Kaart(kleur, getal);
+				i++;
 			}
 		}
 	}

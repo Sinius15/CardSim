@@ -8,9 +8,9 @@ public class CardSimulator {
 		
 		Hand speler1 = kaartSet.deelVolgende();
 		Hand speler2 = kaartSet.deelVolgende();
-		System.out.println("===========speler 1: ");
+		System.out.println("speler 1: ");
 		System.out.println(speler1);
-		System.out.println("===========speler 2: ");
+		System.out.println("speler 2: ");
 		System.out.println(speler2);
 	}
 	
