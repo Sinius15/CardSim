@@ -1,8 +1,17 @@
-package com.sinius15.cardsim;
+package com.sinius15.cardsim.test;
+
+import com.sinius15.cardsim.Hand;
+import com.sinius15.cardsim.Set;
 
 public class KaartSpel implements Runnable{
 	
 	public float slechtGeschud = 0, goedGeschud = 0;
+	
+	private int aantalSpelletjes;
+	
+	public KaartSpel(int aantalSpelletjes){
+		this.aantalSpelletjes = aantalSpelletjes;
+	}
 	
 	@Override
 	public void run() {
@@ -11,7 +20,7 @@ public class KaartSpel implements Runnable{
 
 		Hand[] spelers = new Hand[7];
 		
-		for(int i = 0; i <1000000; i++){
+		for(int i = 0; i <aantalSpelletjes; i++){
 			kaartSet.schud();
 			for(int j = 0; j < spelers.length; j++){
 				spelers[j] = kaartSet.deelVolgende();
@@ -22,7 +31,7 @@ public class KaartSpel implements Runnable{
 				if(!speler.isGoedGeschud())
 					klachten++;
 			}
-			if(klachten > 3) //meer dan de helft
+			if(klachten > spelers.length/2) //meer dan de helft
 				slechtGeschud++;
 			else 
 				goedGeschud++;
@@ -33,8 +42,6 @@ public class KaartSpel implements Runnable{
 	
 	@Override
 	public String toString() {
-		return "slecht Geschud:\t\t" + slechtGeschud + System.lineSeparator() +
-		"goed Geschud:\t\t" + goedGeschud + System.lineSeparator() +
-		slechtGeschud/goedGeschud*100+"% is slecht geschud.";
+		return slechtGeschud/goedGeschud*100+"% is slecht geschud.";
 	}
 }

@@ -31,9 +31,9 @@ public class Set {
 	
 	public Hand deelVolgende() {
 		aantalGedeeld++;
-		if(aantalGedeeld*Hand.handGrote > Set.SET_GROTE)
+		if(aantalGedeeld*Vars.handGrote > Set.SET_GROTE)
 			new IndexOutOfBoundsException("Alle kaarten zijn op! Sorry :( Volgende potje mag je meespelen.");
-		return new Hand(Arrays.copyOfRange(kaarten, (aantalGedeeld-1)*Hand.handGrote, aantalGedeeld*Hand.handGrote));
+		return new Hand(Arrays.copyOfRange(kaarten, (aantalGedeeld-1)*Vars.handGrote, aantalGedeeld*Vars.handGrote));
 	}
 	
 }
