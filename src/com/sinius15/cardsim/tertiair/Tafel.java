@@ -1,29 +1,26 @@
-package com.sinius15.cardsim.test;
+package com.sinius15.cardsim.tertiair;
 
 import com.sinius15.cardsim.Vars;
 import com.sinius15.cardsim.secondary.Hand;
 import com.sinius15.cardsim.secondary.Set;
+import com.sinius15.cardsim.test.CardSimulator;
 
 public class Tafel implements Runnable{
 	
 	public float slechtGeschud = 0, goedGeschud = 0;
 	
-	private int aantalSpelletjes;
-	
-	public Tafel(int aantalSpelletjes){
-		this.aantalSpelletjes = aantalSpelletjes;
-	}
+	public int aantalRondjes = Vars.aantalTests;
 	
 	@Override
 	public void run() {
 		
 		Set kaartSet = new Set();
 
-		Hand[] spelers = new Hand[7];
+		Hand[] spelers;
 		
-		for(int i = 0; i <aantalSpelletjes; i++){
+		for(int i = 0; i <aantalRondjes; i++){
 			kaartSet.schud();
-			spelers = kaartSet.deel(7, "sinius");
+			spelers = kaartSet.deel(Vars.aantal_spelers, "sinius");
 			
 			int klachten = 0;
 			for(Hand speler : spelers){
@@ -41,6 +38,6 @@ public class Tafel implements Runnable{
 	
 	@Override
 	public String toString() {
-		return slechtGeschud/goedGeschud*100+"% is slecht geschud.";
+		return slechtGeschud/(goedGeschud+slechtGeschud)*100+"% is slecht geschud.";
 	}
 }

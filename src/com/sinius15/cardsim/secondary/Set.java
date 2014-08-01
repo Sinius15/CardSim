@@ -59,7 +59,7 @@ public class Set {
 		if(algorythm.equals("sinius")){
 			Hand[] out = new Hand[aantalHanden];
 			for(int i = 0; i < out.length; i++){
-				out[i] = new Hand(Arrays.copyOfRange(kaarten, (i)*Vars.handGrote, (i+1)*Vars.handGrote));
+				out[i] = new Hand(Arrays.copyOfRange(kaarten, i*Vars.handGrote, (i+1)*Vars.handGrote));
 			}
 			return out;
 		}
