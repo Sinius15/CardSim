@@ -3,13 +3,13 @@ package com.sinius15.cardsim.test;
 import com.sinius15.cardsim.Hand;
 import com.sinius15.cardsim.Set;
 
-public class KaartSpel implements Runnable{
+public class Tafel implements Runnable{
 	
 	public float slechtGeschud = 0, goedGeschud = 0;
 	
 	private int aantalSpelletjes;
 	
-	public KaartSpel(int aantalSpelletjes){
+	public Tafel(int aantalSpelletjes){
 		this.aantalSpelletjes = aantalSpelletjes;
 	}
 	

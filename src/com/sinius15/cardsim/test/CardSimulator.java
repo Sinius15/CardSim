@@ -25,10 +25,10 @@ public class CardSimulator {
 		beindigdeSpellen = 0;
 		long startTijd = System.currentTimeMillis();
 		
-		ArrayList<KaartSpel> spellen = new ArrayList<>();
+		ArrayList<Tafel> spellen = new ArrayList<>();
 		
 		for(int i = 0; i < tafels; i++){
-			KaartSpel k = new KaartSpel(Vars.aantalPerTest/tafels);
+			Tafel k = new Tafel(Vars.aantalPerTest/tafels);
 			spellen.add(k);
 			new Thread(k, "spel"+i).start();
 		}
@@ -45,7 +45,7 @@ public class CardSimulator {
 		
 		float goed = 0;
 		float slecht = 0;
-		for(KaartSpel k : spellen){
+		for(Tafel k : spellen){
 			goed += k.goedGeschud;
 			slecht += k.slechtGeschud;
 		}
