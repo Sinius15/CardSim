@@ -1,5 +1,6 @@
 package com.sinius15.cardsim.test;
 
+import com.sinius15.cardsim.Vars;
 import com.sinius15.cardsim.secondary.Hand;
 import com.sinius15.cardsim.secondary.Set;
 
@@ -29,7 +30,7 @@ public class Tafel implements Runnable{
 				if(!speler.isGoedGeschud())
 					klachten++;
 			}
-			if(klachten > spelers.length/2) //meer dan de helft
+			if(klachten > Vars.MAX_KLACHTEN) //meer dan de helft
 				slechtGeschud++;
 			else 
 				goedGeschud++;

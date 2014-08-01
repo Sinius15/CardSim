@@ -11,6 +11,9 @@ public class Vars {
 	//aantal kaarten in één hand
 	public static final int handGrote = 7;
 	
+	//maximaal aantal klachten.
+	public static final int MAX_KLACHTEN = 3;
+	
 	//maximale hoeveelheid dat van één kleur aanwezig mag zijn in een hand.
 	public static final int MAX_KLEUR_AANTAL = 3;  
 	
@@ -19,5 +22,7 @@ public class Vars {
 	
 	//aantal kaarten in één set
 	public static final int SET_GROTE = Kleur.values().length * Getal.values().length;
+
+	
 	
 }
