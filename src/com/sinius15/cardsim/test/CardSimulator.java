@@ -1,5 +1,8 @@
 package com.sinius15.cardsim.test;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 import com.sinius15.cardsim.Vars;
 import com.sinius15.cardsim.tertiair.Tafel;
 
@@ -7,12 +10,23 @@ public class CardSimulator {
 	
 	public static int beindigdeSpellen;
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+		StringBuilder outt = new StringBuilder();
 		
-		Tafel tafel = new Tafel();
-		tafel.run();
-		System.out.println(tafel);
-		System.out.println(getSettingString());
+		for(int i = 1; i <= 7; i++){
+			
+			Vars.aantal_spelers = i;
+			
+			Tafel tafel = new Tafel();
+			tafel.run();
+			outt.append(tafel + System.lineSeparator());
+			outt.append(getSettingString() + System.lineSeparator() + System.lineSeparator());
+		}
+		
+		FileWriter wr = new FileWriter("test Aantal Spelers");
+		wr.write(outt.toString());
+		wr.flush();
+		wr.close();
 	}
 	
 	public static String getSettingString(){

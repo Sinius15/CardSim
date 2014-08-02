@@ -1,0 +1,70 @@
+0.0% is slecht geschud.
+settings: 
+ - maximaal zelfde kleur: 	3
+ - maximaal zelfde getal: 	2
+ - maximaal aantal klachten: 	5
+ - aantal spelers: 	 	1
+ - aantal kaarten in hand: 	7
+ - aantal tests: 	 	1000000
+
+
+0.0% is slecht geschud.
+settings: 
+ - maximaal zelfde kleur: 	3
+ - maximaal zelfde getal: 	2
+ - maximaal aantal klachten: 	5
+ - aantal spelers: 	 	2
+ - aantal kaarten in hand: 	7
+ - aantal tests: 	 	1000000
+
+
+0.0% is slecht geschud.
+settings: 
+ - maximaal zelfde kleur: 	3
+ - maximaal zelfde getal: 	2
+ - maximaal aantal klachten: 	5
+ - aantal spelers: 	 	3
+ - aantal kaarten in hand: 	7
+ - aantal tests: 	 	1000000
+
+
+0.0% is slecht geschud.
+settings: 
+ - maximaal zelfde kleur: 	3
+ - maximaal zelfde getal: 	2
+ - maximaal aantal klachten: 	5
+ - aantal spelers: 	 	4
+ - aantal kaarten in hand: 	7
+ - aantal tests: 	 	1000000
+
+
+0.0% is slecht geschud.
+settings: 
+ - maximaal zelfde kleur: 	3
+ - maximaal zelfde getal: 	2
+ - maximaal aantal klachten: 	5
+ - aantal spelers: 	 	5
+ - aantal kaarten in hand: 	7
+ - aantal tests: 	 	1000000
+
+
+0.0866% is slecht geschud.
+settings: 
+ - maximaal zelfde kleur: 	3
+ - maximaal zelfde getal: 	2
+ - maximaal aantal klachten: 	5
+ - aantal spelers: 	 	6
+ - aantal kaarten in hand: 	7
+ - aantal tests: 	 	1000000
+
+
+0.4301% is slecht geschud.
+settings: 
+ - maximaal zelfde kleur: 	3
+ - maximaal zelfde getal: 	2
+ - maximaal aantal klachten: 	5
+ - aantal spelers: 	 	7
+ - aantal kaarten in hand: 	7
+ - aantal tests: 	 	1000000
+
+
