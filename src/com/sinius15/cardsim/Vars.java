@@ -6,13 +6,13 @@ import com.sinius15.cardsim.primary.Kleur;
 public class Vars {
 	
 	//aantal tests per tafel
-	public static int aantalTests = 1000*1000;
+	public static int aantalTests = 1000*1000*1000;
 	
 	//aantal kaarten in één hand
 	public static int handGrote = 7;
 	
 	//maximaal aantal klachten.
-	public static int MAX_KLACHTEN = 5;
+	public static int MAX_KLACHTEN = 3;
 	
 	//maximale hoeveelheid dat van één kleur aanwezig mag zijn in een hand.
 	public static int MAX_KLEUR_AANTAL = 3;  

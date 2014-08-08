@@ -23,7 +23,7 @@ public class CardSimulator {
 			outt.append(getSettingString() + System.lineSeparator() + System.lineSeparator());
 		}
 		
-		FileWriter wr = new FileWriter("test Aantal Spelers");
+		FileWriter wr = new FileWriter("test Aantal Spelers.txt");
 		wr.write(outt.toString());
 		wr.flush();
 		wr.close();
