@@ -6,7 +6,7 @@ import com.sinius15.cardsim.primary.Kleur;
 public class Vars {
 	
 	//aantal tests per tafel
-	public static int aantalTests = 1000*1000*1000;
+	public static int aantalTests = 1000;
 	
 	//aantal kaarten in één hand
 	public static int handGrote = 7;

@@ -24,6 +24,7 @@ public class Set {
 	}
 	
 	public void schud() {
+		nextCard = 0;
 		List<Kaart> lijst = Arrays.asList(kaarten);
 		Collections.shuffle(lijst);
 		this.kaarten = lijst.toArray(new Kaart[Vars.SET_GROTE]);
@@ -65,8 +66,11 @@ public class Set {
 		}
 		
 		return null;
-		
-		
 	}
 	
+	private int nextCard = 0;
+	public Kaart nextKaart(){
+		nextCard++;
+		return kaarten[nextCard+1];
+	}
 }
